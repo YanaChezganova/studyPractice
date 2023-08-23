@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/drawable/black.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/drawable/gradient_black.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/drawable/home_button.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/drawable/ic_launcher_background.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/drawable/ic_logosvg.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/drawable/image_shape.xml" value="0.259" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/layout-v26/card_of_film.xml" value="0.25" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/layout/activity_main.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/layout/actor_info_little_view.xml" value="0.7263513513513513" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/layout/card_of_film.xml" value="0.18" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/layout/fragment_dashboard.xml" value="0.33751205400192863" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/layout/fragment_home.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/layout/fragment_notifications.xml" value="0.25729166666666664" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Public/Documents/android_lvl_1/Skillcinema/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/background_films.xml" value="0.262" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/background_search.xml" value="0.262" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/bottom_dialog.xml" value="0.212" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/bottom_dialog_add_to_collection.xml" value="0.167" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_for_all_blue_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_for_all_dark_blue_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_for_all_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_for_films_white_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_for_job_blue.xml" value="0.262" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_for_job_dark_blue.xml" value="0.262" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_for_job_grey.xml" value="0.2355" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_for_job_white.xml" value="0.262" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_for_serials_blue_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_for_serials_dark_blue_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_for_serials_white_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_left_rounding_blue_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_left_rounding_dark_blue_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_left_rounding_white_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_right_rounding_blue_in_settings.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_right_rounding_dark_blue_in_settings.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_right_rounding_white_in_settings.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_without_rounding_blue_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_without_rounding_dark_blue_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/button_without_rounding_white_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/dialog.xml" value="0.212" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/gradient_black.xml" value="0.262" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/gradient_blue.xml" value="0.1" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_black_home.xml" value="0.2465" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_black_profile.xml" value="0.2465" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_black_search.xml" value="0.2465" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_blue_arrow.xml" value="0.2225" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_button_back.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_button_forward.xml" value="0.1915" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_circle_arrow.xml" value="0.185" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_eye_black.xml" value="0.228" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_eye_white.xml" value="0.228" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_filter.xml" value="0.2465" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_flag_black.xml" value="0.2465" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_flag_little.xml" value="0.2465" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_flag_white.xml" value="0.1435" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_heart_black.xml" value="0.2465" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_heart_little.xml" value="0.2465" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_heart_white.xml" value="0.1435" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_logo.xml" value="0.2355" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_not_eye_black.xml" value="0.211" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_not_eye_little.xml" value="0.211" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_person_black.xml" value="0.2465" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_share_little.xml" value="0.262" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/ic_trash.xml" value="0.2355" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/image_search.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/image_shape.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/logo_blue_black.xml" value="0.1365" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/progress_bar.xml" value="0.2355" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/rate_button.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/rate_button_blue.xml" value="0.262" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/rate_button_white.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/seasons.xml" value="0.1945" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/selector_button_for_job.xml" value="0.262" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/selector_button_job.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/selector_button_left_rounding_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/selector_button_right_rounding_in_settings.xml" value="0.2625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/selector_button_without_rounding_in_settings.xml" value="0.18" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/drawable/test_strpoke.xml" value="0.127" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/activity_main2.xml" value="0.33" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/actor_info_big_view.xml" value="0.12825994014536127" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/actor_info_little_view.xml" value="0.5390625" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/arrow_in_circle.xml" value="0.75" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/bottom_dialog_add_to_collection.xml" value="0.25" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/bottom_dialog_mistake.xml" value="0.25" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/button_for_role.xml" value="0.1" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/card_of_film.xml" value="0.22536496350364962" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/card_of_film_blue_rate_little.xml" value="0.67" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/card_of_film_grey_rate_little.xml" value="0.33" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/card_of_film_white_rate_INVISIBLE.xml" value="0.21804189824711415" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/card_of_film_white_rate_little.xml" value="0.25" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/card_of_folm_for_search_little.xml" value="0.1" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/collection_view_group.xml" value="0.21120136810602821" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/content_main2.xml" value="0.1" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/country_genre_text_item.xml" value="0.2" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/dialog_confirmation_deleting_collection.xml" value="0.2" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/dialog_enter_title_of_collection.xml" value="0.2" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/film_card_little.xml" value="0.547911547911548" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/filmography.xml" value="0.25" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/fragment_home.xml" value="0.16" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/fragment_profile.xml" value="0.30440414507772023" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/fragment_search.xml" value="0.29985855728429983" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/gallery.xml" value="0.2867587327376117" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/gallery_big_image.xml" value="0.22398477157360405" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/gallery_photo_big_item.xml" value="0.14493373236425822" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/gallery_photo_item.xml" value="0.33" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/info_actor.xml" value="0.25" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/item_button_blue_with_text.xml" value="0.14493373236425822" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/item_button_for_job.xml" value="0.4742063492063492" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/item_button_for_role.xml" value="0.5" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/item_circle_with_arrow.xml" value="0.33" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/item_rounding_three_button.xml" value="0.9" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/list_of_films.xml" value="0.25" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/mistake.xml" value="0.21120136810602821" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/progress.xml" value="0.9" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/search_choice.xml" value="0.2" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/search_settings.xml" value="0.3548009367681499" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/season_text_item.xml" value="0.33" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/seasons.xml" value="0.586687306501548" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/slider_item.xml" value="0.21120136810602821" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/text_table_layout.xml" value="0.22350674373795762" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/view_group_collection.xml" value="0.5" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/view_group_header_horizontal_list.xml" value="0.5253399258343634" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/view_group_header_small_text_size.xml" value="0.33" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/view_group_titles_of_folders.xml" value="0.25" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/year_choice.xml" value="0.45196706312900276" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/layout/year_chose.xml" value="0.18" />
+        <entry key="..\:/Users/Public/Documents/final_android_lvl1/final_android_lvl1/Skillcinema/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

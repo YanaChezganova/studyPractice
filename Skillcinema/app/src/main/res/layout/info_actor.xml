@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <RelativeLayout
+        android:id="@+id/layout_with_header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button_back"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_button_back" />
+
+
+    </RelativeLayout>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/person_image"
+        android:layout_width="146dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="26dp"
+        android:scaleType="center"
+        android:background="@drawable/background_films"
+        app:layout_constraintTop_toBottomOf="@id/layout_with_header"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/photo"
+        >
+    </com.google.android.material.imageview.ShapeableImageView>
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/layout_with_header"
+        app:layout_constraintStart_toEndOf="@id/person_image">
+    <TextView
+        android:id="@+id/person_name_ru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:maxWidth="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="26dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/graphik_medium"
+        android:textColor="#000000"
+
+        />
+    <TextView
+        android:id="@+id/person_name_en"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actor_name"
+        android:gravity="start"
+        android:maxWidth="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="26dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/graphik_regular"
+        android:textColor="#000000"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/person_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/job"
+        android:maxWidth="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        style="@style/GreyRegularText"
+        />
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:indeterminateDrawable="@drawable/progress_bar"
+        app:layout_constraintTop_toBottomOf="@+id/person_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"/>
+    <com.example.skillcinema.ui.support.ViewGroupFilmsList
+        android:id="@+id/best_films_custom_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/person_image"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_filmography"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="start"
+        app:layout_constraintTop_toBottomOf="@+id/best_films_custom_view"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <TextView
+            style="@style/BlackMediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="start"
+            android:text="@string/filmography" />
+
+        <TextView
+            android:id="@+id/text_count_of_all_films"
+            style="@style/GreyRegularText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="66dp"
+            android:gravity="start"
+            android:text="@string/count_of_films_by_actor" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_count_of_films"
+            style="@style/BlueRegularTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="46dp"
+            android:layout_marginBottom="35dp"
+            android:contentDescription="@strings/actors_count"
+            android:text="@string/to_list" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button_count_of_films"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="7dp"
+            android:contentDescription="@string/show_all"
+            android:src="@drawable/ic_blue_arrow" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_filmography"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    </ScrollView>

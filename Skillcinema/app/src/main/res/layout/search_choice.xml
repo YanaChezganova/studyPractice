@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.example.skillcinema.ui.support.ViewGroupHeaderOnly
+        android:id="@+id/layout_with_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background_search"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="50dp"
+        style="@style/RegularTextStyle"
+        android:textColor="#838390"
+        android:hint="@string/films_actors_ets"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/button_clear"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/search_view"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vertical_choice_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:paddingBottom="180dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_view"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="RegularTextStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="fontFamily">@font/graphik_regular</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!--Customize your theme here. -->
+    <style name="BlueRegularTextStyle" parent="RegularTextStyle">
+        <item name="android:textColor">#3D3BFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="WhiteRegularTextStyle" parent="RegularTextStyle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="GreyRegularText" parent="RegularTextStyle">
+        <item name="android:textColor">#838390</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="GreyPosterText" parent="GreyRegularText">
+        <item name="android:textColor">#B5B5C9</item>
+    </style>
+
+
+    <style name="BlackBoldText" parent="TextAppearance.AppCompat.Small">
+        <item name="fontFamily">@font/graphik_bold</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="GreyPosterHeaderText" parent="BlackBoldText">
+        <item name="android:textColor">#B5B5C9</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+
+    <style name="BlackMediumText" parent="TextAppearance.AppCompat.Small">
+        <item name="fontFamily">@font/graphik_medium</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_marginStart">26dp</item>
+        <item name="android:layout_marginEnd">26dp</item>
+    </style>
+
+
+
+</resources>

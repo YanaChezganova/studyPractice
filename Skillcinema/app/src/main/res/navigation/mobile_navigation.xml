@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.skillcinema.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.skillcinema.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.skillcinema.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/listOfFilms"
+        android:name="com.example.skillcinema.ui.home.ListOfFilms"
+        android:label="ListOfFilms" />
+    <fragment
+        android:id="@+id/cardOfFilm"
+        android:name="com.example.skillcinema.ui.home.CardOfFilm"
+        android:label="CardOfFilm" />
+    <action android:id="@+id/action_global_cardOfFilm"
+        app:destination="@id/cardOfFilm"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true" />
+    <action android:id="@+id/action_global_navigation_home"
+        app:destination="@id/navigation_home"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true" />
+    <action android:id="@+id/action_global_listOfFilms"
+        app:destination="@id/listOfFilms"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/galleryBigPhoto"
+        android:name="com.example.skillcinema.ui.home.GalleryBigPhoto"
+        android:label="GalleryBigPhoto" />
+    <action android:id="@+id/action_global_galleryBigPhoto"
+        app:destination="@id/galleryBigPhoto"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/infoActor"
+        android:name="com.example.skillcinema.ui.home.InfoActor"
+        android:label="InfoActor" />
+    <action android:id="@+id/action_global_infoActor"
+        app:destination="@id/infoActor"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/listOfPersonsFilms"
+        android:name="com.example.skillcinema.ui.home.ListOfPersonsFilms"
+        android:label="ListOfPersonsFilms" />
+    <action android:id="@+id/action_global_listOfPersonsFilms"
+        app:destination="@id/listOfPersonsFilms"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/filmography"
+        android:name="com.example.skillcinema.ui.home.Filmography"
+        android:label="Filmography" />
+    <action android:id="@+id/action_global_filmography"
+        app:destination="@id/filmography"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/listOfPersons"
+        android:name="com.example.skillcinema.ui.home.ListOfPersons"
+        android:label="ListOfPersons" />
+    <action android:id="@+id/action_global_listOfPersons"
+        app:destination="@id/listOfPersons"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/serials"
+        android:name="com.example.skillcinema.ui.home.Serials"
+        android:label="Serials" />
+    <action android:id="@+id/action_global_serials"
+        app:destination="@id/serials"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/countryChoice"
+        android:name="com.example.skillcinema.ui.search.CountryChoice"
+        android:label="CountryChoice" />
+    <action android:id="@+id/action_global_countryChoice"
+        app:destination="@id/countryChoice"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true" />
+    <action android:id="@+id/action_global_navigation_search"
+        app:destination="@id/navigation_search"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/yearChoice"
+        android:name="com.example.skillcinema.ui.search.YearChoice"
+        android:label="YearChoice" />
+    <action android:id="@+id/action_global_yearChoice"
+        app:destination="@id/yearChoice"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/searchSettings"
+        android:name="com.example.skillcinema.ui.search.SearchSettings"
+        android:label="SearchSettings" />
+    <action android:id="@+id/action_global_searchSettings"
+        app:destination="@id/searchSettings"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/bigPhotoWithScrolling"
+        android:name="com.example.skillcinema.ui.home.BigPhotoWithScrolling"
+        android:label="BigPhotoWithScrolling" />
+    <action android:id="@+id/action_global_bigPhotoWithScrolling"
+        app:destination="@id/bigPhotoWithScrolling"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true"/>
+    <dialog
+        android:id="@+id/bottomFragmentAddToCollection"
+        android:name="com.example.skillcinema.ui.profile.BottomFragmentAddToCollection"
+        android:label="BottomFragmentAddToCollection" />
+    <action android:id="@+id/action_global_bottomFragmentAddToCollection"
+        app:destination="@id/bottomFragmentAddToCollection"/>
+    <dialog
+        android:id="@+id/bottomFragmentMistake"
+        android:name="com.example.skillcinema.ui.support.BottomFragmentMistake"
+        android:label="BottomFragmentMistake" />
+    <action android:id="@+id/action_global_bottomFragmentMistake"
+        app:destination="@id/bottomFragmentMistake"/>
+    <dialog
+        android:id="@+id/dialogEnterTitleOfCollection"
+        android:name="com.example.skillcinema.ui.profile.DialogEnterTitleOfCollection"
+        android:label="DialogEnterTitleOfCollection" />
+    <action android:id="@+id/action_global_dialogEnterTitleOfCollection"
+        app:destination="@id/dialogEnterTitleOfCollection" />
+    <dialog
+        android:id="@+id/dialogConfirmationDeleting"
+        android:name="com.example.skillcinema.ui.profile.DialogConfirmationDeleting"
+        android:label="DialogConfirmationDeleting" />
+    <action android:id="@+id/action_global_dialogConfirmationDeleting"
+        app:destination="@id/dialogConfirmationDeleting"/>
+    <action android:id="@+id/action_global_navigation_profile"
+        app:destination="@id/navigation_profile"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true" />
+    <fragment
+        android:id="@+id/filmsInCollection"
+        android:name="com.example.skillcinema.ui.profile.FilmsInCollection"
+        android:label="FilmsInCollection" />
+    <action android:id="@+id/action_global_filmsInCollection"
+        app:destination="@id/filmsInCollection"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/gallery1"
+        android:name="com.example.skillcinema.ui.home.Gallery1"
+        android:label="Gallery1" />
+    <action android:id="@+id/action_global_gallery1"
+        app:destination="@id/gallery1"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out"
+        app:popUpToInclusive="true"/>
+</navigation>

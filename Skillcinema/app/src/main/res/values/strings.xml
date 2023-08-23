@@ -1,0 +1,140 @@
+<resources
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">SkillCinema</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_profile">Profile</string>
+    <string name="none"> </string>
+    <string name="description_title_text">Молодые москвичи бегут от своих проблем в русскую глушь. &#10;Мистическая утопия Дмитрия Глуховского</string>
+    <string name="description_text">Столкнувшись с неразрешимыми проблемами, пять молодых москвичей убегают в монастырь неподалеку от полузаброшенной деревни Топи. Они воспринимают поездку как приключение, долгожданную свободу от забот и возможность забыться. Однако путешествие оборачивается чередой загадочных событий, которые лишь приближают то, от чего они бежали, и заставляют сомневаться в реальности происходящего.</string>
+    <string name="seasons_series">Сезоны и серии</string>
+    <string name="all">Все</string>
+    <string name="starred_in_the_film">В фильме снимались</string>
+    <string name="actor_name">Владимир Попов</string>
+    <string name="actor_role">Лешка</string>
+    <string name="film_name">Близкие</string>
+    <string name="film_genre">Драма</string>
+    <string name="rate">7.8</string>
+    <string name="title_film"><xliff:g example="Kitty" id="filmTitle">%1$s</xliff:g></string>
+    <string name="rating_title"><xliff:g example="1" id="rating">%1$s</xliff:g> <xliff:g example="Kitty" id="filmTitle">%2$s</xliff:g></string>
+    <string name="season"><xliff:g example="1" id="rating">%1$d</xliff:g> сезон, </string>
+    <string name="country">Страна</string>
+    <string name="genre">Жанр</string>
+    <string name="year"><xliff:g example="2022" id="year">%1$d</xliff:g></string>
+    <string name="year_to_year"><xliff:g example="2022" id="year">%1$d</xliff:g> - <xliff:g example="2024" id="year">%2$d</xliff:g></string>
+    <string name="choose">Выбрать</string>
+
+    <string name="period_since">Искать в период с</string>
+    <string name="period_until">Искать в период до</string>
+    <string name="actors_count">количество актеров фильма</string>
+    <string name="show_all">Показать всё</string>
+    <string name="additional_features">дополнительные возможности</string>
+    <string name="share">поделиться</string>
+    <string name="watched_or_not">не просморено</string>
+    <string name="worked_in_the_film">Над фильмом работали</string>
+    <string name="gallery">Галерея</string>
+    <string name="similar_films_count">количество похожих фильмов</string>
+    <string name="similar_films">Похожие фильмы</string>
+    <string name="film_photos_count">количество фото в галерее</string>
+    <string name="film_workers_count">количество работавших над фильмом</string>
+    <string name="premiere">Премьеры</string>
+    <string name="popular">Популярное</string>
+    <string name="top_250">Топ-250</string>
+    <string name="serials">Сериалы</string>
+    <string name="custom_selection"><xliff:g example="Боевики" id="genre">%1$s</xliff:g> <xliff:g example="США" id="country">%2$s</xliff:g> </string>
+    <string name="not_found">К сожалению, по вашему запросу \n ничего не найдено</string>
+    <string name="films_actors_ets">Фильмы, актёры, режиссёры</string>
+    <string name="filter">фильтр</string>
+    <string name="add_to_favorite">добавить в любимые</string>
+    <string name="add_to_collection">Добавить в коллекцию</string>
+    <string name="favorite">Любимые</string>
+    <string name="ready">Готово</string>
+    <string name="make_title_for_new_collection">Придумайте название для вашей новой коллекции</string>
+    <string name="my_collection">Моя коллекция</string>
+    <string name="mistake">Ошибка!</string>
+    <string name="description_of_mistake">Во время обработки запроса произошла ошибка</string>
+    <string name="delete">Удалить</string>
+    <string name="description_of_deleting">Удалить коллекцию "<xliff:g example="Films" id="name">%1$s</xliff:g>"?</string>
+    <string name="cancel">Отмена</string>
+
+    <string name="close">Закрыть</string>
+    <string name="create_collection">Создать свою коллекцию</string>
+    <string name="photo">фотография</string>
+    <string name="film_year_genre"><xliff:g example="2021" id="year">%1$s</xliff:g>, <xliff:g example="Драма" id="genre">%2$s</xliff:g> </string>
+    <string name="film_year_genre_genre"><xliff:g example="2021" id="year">%1$s</xliff:g>, <xliff:g example="Драма, триллер" id="genres">%2$s</xliff:g> </string>
+    <string name="film_country_duration_ageLimit"><xliff:g example="Россия" id="country">%1$s</xliff:g>, <xliff:g example="1ч55м" id="duration">%2$s</xliff:g>, <xliff:g example="16+" id="ageLimit">%3$s</xliff:g> </string>
+    <string name="hours_minutes"><xliff:g example="1" id="hour">%1$s</xliff:g> ч <xliff:g example="55" id="minutes">%2$s</xliff:g> м</string>
+    <string name="word_year">Год</string>
+    <string name="year_since_until">c <xliff:g example="1998" id="year">%1$s</xliff:g> до <xliff:g example="55" id="minutes">%2$s</xliff:g></string>
+    <string name="rating_since_until">от <xliff:g example="1998" id="year">%1$s</xliff:g> до <xliff:g example="55" id="minutes">%2$s</xliff:g></string>
+    <string name="rating">Рейтинг</string>
+    <string name="any_rating">от 1 до 9</string>
+    <string name="apply">Применить</string>
+    <string name="any_years">c 2000 до 2015</string>
+    <string name="collections">Коллекции</string>
+
+    <string name="hide_watched">Скрывать просмотренные</string>
+    <string name="show_watched">Показывать просмотренные</string>
+    <string name="watched_films">Просмотренные фильмы</string>
+
+    <string name="sort">Сортировать</string>
+    <string name="word_date">Дата</string>
+    <string name="word_popular">Популярность</string>
+    <string name="search_settings">Настройки поиска</string>
+
+    <string name="screenshot_count">Кадры  <xliff:g example="33" id="count">%1$d</xliff:g></string>
+    <string name="Poster_count">Постеры  <xliff:g example="33" id="count">%1$d</xliff:g></string>
+    <string name="From_work_photo_count">Со съёмок  <xliff:g example="33" id="count">%1$d</xliff:g></string>
+    <string name="want_to_see">Хочу посмотреть</string>
+    <string name="it_was_interesting">Вам было интересно</string>
+    <string name="new_name_to_collection">Придумайте название для вашей новой коллекции</string>
+    <string name="add_to_want_to_see">добавить в закладку хочу посмотреть</string>
+    <string name="job">Актер</string>
+    <string name="job_and_count"><xliff:g example="Актер" id="actor">%1$s</xliff:g> <xliff:g example="44" id="count">%2$d</xliff:g></string>
+    <string name="header">Заголовок</string>
+    <string name="seasons">Сезон</string>
+    <string name="number_season_count_series"><xliff:g example="1" id="number">%1$d</xliff:g> сезон, <xliff:g example="45" id="count">%2$d</xliff:g> серий</string>
+
+    <plurals name="number_season">
+       <item quantity="one">%1$d сезон</item>
+       <item quantity="two">%1$d сезона</item>
+       <item quantity="few">%1$d сезона</item>
+       <item quantity="many">%1$d сезонов</item>
+        <item quantity="other">%1$d сезонов</item>
+   </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$d серия</item>
+        <item quantity="two">%1$d серии</item>
+        <item quantity="few">%1$d серии</item>
+        <item quantity="many">%1$d серий</item>
+        <item quantity="other">%1$d серий</item>
+    </plurals>
+    <string name="number_series_and_title"><xliff:g example="1" id="number">%1$d</xliff:g> серия. <xliff:g example="Введение" id="title">%2$s</xliff:g></string>
+    <string name="date">26 марта 2020</string>
+    <string name="show">Показывать</string>
+    <string name="best">Лучшее</string>
+    <string name="filmography">Фильмография</string>
+    <string name="to_list">К списку</string>
+    <string name="films">Фильмы</string>
+    <string name="skip">Пропустить</string>
+    <string name="share_with_friends">Делись с друзьями</string>
+    <string name="lets_create_collection">Создавай коллекции</string>
+    <string name="know_about_premieres">Узнавай о премьерах</string>
+
+    <string name="count_of_films_by_actor"><xliff:g example="44" id="count">%1$d</xliff:g> фильма </string>
+    <plurals name="count_of_films_by_actor">
+        <item quantity="one">%1$d фильм</item>
+        <item quantity="two">%1$d фильма</item>
+        <item quantity="few">%1$d фильма</item>
+        <item quantity="many">%1$d фильмов</item>
+        <item quantity="other">%1$d фильмов</item>
+    </plurals>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+</resources>

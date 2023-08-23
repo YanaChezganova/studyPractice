@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonOutlinedBlackText" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">@style/RegularTextStyle</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">2dp</item>
+
+    </style>
+
+    <style name="BlueButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/WhiteRegularTextStyle</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ButtonBlackText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/RegularTextStyle</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">2dp</item>
+
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="TextInputDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="textInputStyle">@style/AppDialogStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_dialog</item>
+    </style>
+
+    <style name="AppDialogStyle" parent="Widget.Design.TextInputLayout">
+        <item name="android:background">@drawable/dialog</item>
+    </style>
+</resources>

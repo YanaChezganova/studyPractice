@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.MainActivity2">
+
+    <!--view pager for displaying our slides-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="start"
+        android:padding="10dp"
+        style="@style/RegularTextStyle"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:id="@+id/button_skip"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+   <TextView
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:padding="4dp"
+       android:text="@string/skip"
+       android:textSize="18sp"
+       style="@style/GreyRegularText"
+       android:layout_marginTop="26dp"
+       android:layout_marginEnd="20dp"
+       android:textColor="@color/grey_200"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <!--adding linear layout for
+            creating dots view-->
+        <LinearLayout
+            android:id="@+id/layout_with_dots"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <TextView
+                android:id="@+id/slide_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="•"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/slide_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="•"
+                android:textAlignment="center"
+                android:textColor="@color/grey_100"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/slide_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="•"
+                android:textAlignment="center"
+                android:textColor="@color/grey_100"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

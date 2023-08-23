@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dialog_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.appcompat.widget.AppCompatTextView
+    android:id="@+id/description_cancel_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/make_title_for_new_collection"
+    android:hint="@string/my_collection"
+    style="@style/GreyRegularText"
+    android:layout_marginTop="60dp"
+    android:paddingEnd="26dp"
+    android:layout_marginStart="26dp"
+
+    android:textSize="22sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatEditText
+    android:id="@+id/edit_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/description_cancel_text"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_make_choice"
+        style="@style/WhiteRegularTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:background="@drawable/button_for_job_blue"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="@string/ready"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text" />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/button_close"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="26dp"
+        android:contentDescription="@string/close"
+        android:rotation="45"
+        android:src="@drawable/ic_plus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_make_choice"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

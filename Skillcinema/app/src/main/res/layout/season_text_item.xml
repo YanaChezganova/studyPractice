@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_series_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/RegularTextStyle"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="26dp"
+        android:text="@string/number_series_and_title"
+        android:maxWidth="200dp"
+        android:textSize="14sp"
+
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_series_name_En"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/RegularTextStyle"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="26dp"
+        android:text="@string/number_series_and_title"
+        android:maxWidth="200dp"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_series_data"
+        style="@style/GreyRegularText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/date"
+        android:textSize="11sp"
+       />
+</LinearLayout>

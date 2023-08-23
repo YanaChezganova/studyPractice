@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/button_for_job_dark_blue"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"/>
+    <item
+        android:state_enabled="true"
+        android:drawable="@drawable/button_for_job_blue"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"/>
+    <item
+        android:state_pressed="false"
+        android:drawable="@drawable/button_for_job_grey"
+        android:textSize="18sp"
+        android:textColor="#272727"/>
+</selector>
