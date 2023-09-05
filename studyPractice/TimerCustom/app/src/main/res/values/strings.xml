@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" translatable="false">TimerCustom</string>
+    <string name="stop" translatable="false">Stop</string>
+    <string name="start" translatable="false">Start</string>
+    <string name="reset" translatable="false">Reset</string>
+    <string name="time"><xliff:g example="00" id="hour">%1$d</xliff:g>:<xliff:g example="22" id="minutes">%2$d</xliff:g>:<xliff:g example="33" id="seconds">%3$d</xliff:g></string>
+
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SunnyDay</string>
+    <string name="title_search">Поиск</string>
+    <string name="title_city">Города</string>
+    <string name="not_found">Город не найден</string>
+</resources>

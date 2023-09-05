@@ -1,0 +1,16 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<string name="app_name">Places of interest</string>
+    <string name="date">Date:</string>
+    <string name="sha1">SHA1: A9:97:8E:07:AA:79:F0:15:FA:E2:71:F0:7B:88:D1:F3:0A:BB:57:1D</string>
+    <string name="API_key">AIzaSyDK4nE2crnf85D3BfY01LSz1sNf6gErMSk</string>
+    <string name="start">start</string>
+    <string name="greeting_ready">gh</string>
+    <string name="titleMessage"><xliff:g example="Good morning!" id="time_of_day">%1$s</xliff:g></string>
+    <string-array name="greeting">
+        <item>Good morning!</item>
+        <item>Good day!</item>
+        <item>Good evening!</item>
+        <item>Good night!</item>
+    </string-array>
+</resources>

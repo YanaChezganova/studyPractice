@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="My_button" parent="@style/Widget.MaterialComponents.Button.TextButton">
+<item name="strokeWidth">8dp</item>
+<item name="cornerRadius">30dp</item>
+    </style>
+</resources>

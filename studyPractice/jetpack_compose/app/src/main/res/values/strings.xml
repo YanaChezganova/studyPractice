@@ -1,0 +1,15 @@
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Rick and Morty</string>
+    <string name="description">Character image</string>
+    <string name="reload">Перезагрузить</string>
+    <string name="alive_or_not_type"><xliff:g example="Alive" id="alive">%1$s</xliff:g> - <xliff:g example="Human" id="type">%2$s</xliff:g></string>
+    <string name="location">Last known location:</string>
+    <string name="live_status">Live status:</string>
+    <string name="species_and_gender">Species and gender:</string>
+    <string name="species_and_gender_value"><xliff:g example="Human" id="species">%1$s</xliff:g> (<xliff:g example="Gender" id="gender">%2$s</xliff:g>)</string>
+    <string name="first_seen_in">First seen in:</string>
+    <string name="episodes">Episodes:</string>
+    <string name="back">button back</string>
+    <string name="details">Person details</string>
+
+</resources>
