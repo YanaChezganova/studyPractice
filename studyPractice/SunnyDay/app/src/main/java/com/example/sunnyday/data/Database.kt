@@ -1,11 +1,9 @@
 package com.example.sunnyday.data
 
 import androidx.room.*
-import androidx.room.Database
 import com.example.sunnyday.entity.CityDB
 import com.example.sunnyday.entity.WeatherDB
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.StateFlow
 
 
 @Database(entities =

@@ -7,10 +7,9 @@ import com.example.sunnyday.entity.ComplexWeather
 import javax.inject.Inject
 
 
-class NetworkRepository @Inject constructor(){
+class NetworkRepository @Inject constructor() {
     suspend fun getWeather(city: String): ComplexWeather {
-      // return RetrofitServices.weatherApi.getWeather(city)
-       return searchWeather(retrofit(providesBaseUrl())).getWeather(city)
+        return searchWeather(retrofit(providesBaseUrl())).getWeather(city)
     }
 
 }

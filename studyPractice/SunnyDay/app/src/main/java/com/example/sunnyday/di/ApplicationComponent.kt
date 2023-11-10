@@ -8,14 +8,6 @@ import javax.inject.Singleton
 [NetworkModule::class,
     RoomModule::class,
     DataModule::class,
-//  AppModule::class
 ])
 
 interface AppComponent {}
-   /* fun inject(mainActivity: MainActivity)
-
-
-    interface Factory{
-        fun create(@BindsInstance context: Context): AppComponent
-    }
-}*/
