@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+            <item name="android:background">@drawable/bottom_dialog</item>
+        </style>
+        <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+            <item name="bottomSheetStyle">@style/AppModalStyle</item>
+        </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+</resources>

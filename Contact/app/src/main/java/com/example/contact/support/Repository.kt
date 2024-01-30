@@ -3,6 +3,7 @@ package com.example.contact.support
 import com.example.contact.data.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
@@ -21,12 +22,18 @@ class Repository(private val dao: ContactDao) {
         )
 
     suspend fun addPersonInDB(person: Contact) {
-        val size = allContacts.value.size
+        var size = 0
         scope.launch {
+            allContacts.collect {
+                size = it.size
+            }
+        }
+        scope.launch {
+            delay(300)
             with(person) {
                 dao.insertPersonInDB(
                     Person(
-                        size,
+                        id = 10 + size,
                         title = name.title,
                         first = name.first,
                         last = name.last,
@@ -58,6 +65,7 @@ class Repository(private val dao: ContactDao) {
             dao.deletePerson()
         }
     }
+
     suspend fun getContactListFromNetwork(): ContactList {
         return RetrofitServices.contactApi.getContactList()
     }

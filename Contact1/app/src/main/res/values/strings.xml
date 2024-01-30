@@ -1,0 +1,26 @@
+<resources
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Contact</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="photo">фотография</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">title</string>
+    <string name="phone">9587875454</string>
+    <string name="address">Address</string>
+    <string name="gender">gender</string>
+    <string name="email">E-mail</string>
+
+    <string name="contacts">Contacts</string>
+    <string name="reload_contacts">Reload contacts</string>
+    <string name="mistake">Ошибка!</string>
+    <string name="description_of_mistake">Во время обработки запроса произошла ошибка</string>
+    <string name="close">Закрыть</string>
+    <string name="age"><xliff:g example="54" id="age">%1$d</xliff:g> years old</string>
+    <string name="day_of_birth">18.07.1970</string>
+    <string name="full_address"><xliff:g example="country" id="country">%1$s</xliff:g>,
+        <xliff:g example="state" id="state">%2$s</xliff:g>, <xliff:g example="city" id="city">%3$s</xliff:g>,
+        <xliff:g example="Street" id="street">%4$s</xliff:g>, <xliff:g example="home" id="home">%5$d</xliff:g></string>
+    <string name="person_name"> <xliff:g example="имя" id="name">%1$s</xliff:g> <xliff:g example="фамилия" id="last name">%2$s</xliff:g></string>
+    <string name="person_title_and_name"><xliff:g example="титул" id="title">%1$s</xliff:g> <xliff:g example="имя" id="name">%2$s</xliff:g> <xliff:g example="фамилия" id="last name">%3$s</xliff:g></string>
+
+</resources>
