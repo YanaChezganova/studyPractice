@@ -47,3 +47,13 @@ data class Picture(
     val medium: String,
     val thumbnail: String
 )
+
+data class ContactMinimal(
+   val title: String,
+   val firstName: String,
+   val lastName: String,
+   val phone: String,
+   val country: String,
+   val city: String,
+   val thumbnailUrl: String
+)

@@ -1,6 +1,5 @@
 package com.example.contact.support
 
-import androidx.lifecycle.viewModelScope
 import com.example.contact.data.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -9,13 +8,15 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import java.util.*
+import kotlin.random.Random.Default.nextInt
 
 
 class Repository(private val dao: ContactDao) {
 
     private val scope = CoroutineScope(Dispatchers.Default)
 
-    val allContacts: StateFlow<List<Person>> = this.dao.getAllPersons()
+    val contactMinimal: StateFlow<List<ContactMinimal>> = this.dao.getContactMinimal()
         .stateIn(
             scope = scope,
             started = SharingStarted.WhileSubscribed(5000L),
@@ -23,18 +24,12 @@ class Repository(private val dao: ContactDao) {
         )
 
     suspend fun addPersonInDB(person: Contact) {
-        var size = 0
-        scope.launch {
-            allContacts.collect {
-                size = it.size
-            }
-        }
         scope.launch {
             delay(300)
             with(person) {
                 dao.insertPersonInDB(
                     Person(
-                        id = 10 + size,
+                        id = makeId(),
                         title = name.title,
                         first = name.first,
                         last = name.last,
@@ -60,18 +55,22 @@ class Repository(private val dao: ContactDao) {
             }
         }
     }
-    suspend fun getPersonByIName(name: String, lastName: String): Person{
-        var person = Person(0, "","","","",
-            "",0,"","","", Address("","",
-                0,"","","","",0.0,0.0)
+
+    suspend fun getPersonByIName(name: String, lastName: String): Person {
+        var person = Person(
+            0, "", "", "", "",
+            "", 0, "", "", "", Address(
+                "", "",
+                0, "", "", "", "", 0.0, 0.0
+            )
         )
         scope.launch {
             person = dao.getPersonsById(name, lastName)
         }
         delay(60)
-        println("from repo $person")
         return person
     }
+
     suspend fun deleteContacts() {
         scope.launch {
             dao.deletePerson()
@@ -80,6 +79,11 @@ class Repository(private val dao: ContactDao) {
 
     suspend fun getContactListFromNetwork(): ContactList {
         return RetrofitServices.contactApi.getContactList()
+    }
+
+    fun makeId(): Int {
+        val string = Calendar.getInstance().timeInMillis.toInt().toString().takeLast(5)
+        return (string + nextInt(1, 100)).toInt()
     }
 }
 

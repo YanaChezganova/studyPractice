@@ -5,12 +5,12 @@ import androidx.room.Room
 import com.example.contact.data.ContactDataBase
 
 class Application: Application()  {
-    lateinit var contactsList: ContactDataBase
+    lateinit var contactList: ContactDataBase
     override fun onCreate() {
         super.onCreate()
-        contactsList = Room.databaseBuilder(
+        contactList = Room.databaseBuilder(
             applicationContext,
             ContactDataBase::class.java,
-            "Contacts").build()
+            "Contacts1").build()
     }
 }

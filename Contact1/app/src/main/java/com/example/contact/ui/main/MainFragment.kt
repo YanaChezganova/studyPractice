@@ -13,7 +13,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.contact.Application
 import com.example.contact.R
-import com.example.contact.data.*
+import com.example.contact.data.Contact
+import com.example.contact.data.ContactDao
+import com.example.contact.data.ContactMinimal
+import com.example.contact.data.State
 import com.example.contact.databinding.FragmentMainBinding
 import com.example.contact.support.AdapterRecyclerView
 import kotlinx.coroutines.CoroutineScope
@@ -28,13 +31,12 @@ class MainFragment : Fragment() {
     private var bundle = Bundle()
     private lateinit var contactRecycleView: RecyclerView
     private lateinit var contactAdapter: AdapterRecyclerView
-
     private val viewModel by viewModels<MainViewModel>()
     {
         object : ViewModelProvider.Factory {
             override fun <T : ViewModel> create(modelClass: Class<T>): T {
                 val contactDao: ContactDao =
-                    (activity?.application as Application).contactsList.contactDao()
+                    (activity?.application as Application).contactList.contactDao()
                 return MainViewModel(contactDao) as T
             }
         }
@@ -45,110 +47,61 @@ class MainFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
+        viewModel.getContactListFromDB()
         contactAdapter = AdapterRecyclerView()
         contactRecycleView = binding.contactsVerticalRecyclerView
         contactRecycleView.adapter = contactAdapter
-        println("start viewModel.getContactListFromDB()")
-        viewModel.getContactListFromDB()
-        var listOfPerson = listOf<Person>()
         val scope = CoroutineScope(Dispatchers.Default)
+        var listOfPerson = emptyList<ContactMinimal>()
+        viewLifecycleOwner.lifecycleScope.launch {
+            delay(100)
+            viewModel.contactsFromDB.collect {
+                listOfPerson = it
+                println("list of person 1 $it")
+                contactAdapter.setData(it, ::onItemClick)
+            }
+        }
+        val listOfContacts = mutableListOf<ContactMinimal>()
 
         viewLifecycleOwner.lifecycleScope.launch {
-            scope.launch {
-                delay(1500)
-                viewModel.contactsFromDB
-                    .collect {
-                        listOfPerson = it
-                        println("list of person 1 $listOfPerson")
-
-                    }
-            }
-            delay(300)
-            println("list of person 2 $listOfPerson")
-
-            delay(500)
+            delay(2000)
             if (listOfPerson.isEmpty()) {
-                println("list is empty")
-                viewModel.loadContactsFromNetwork()
-                println("start delay 1500 ffter network")
-                delay(1500)
-                println("end delay 1500 ffter network")
 
-                viewModel.loadContactsInDB()
-                println("start delay 1500 to load in db")
-
-                delay(500)
-                println("end delay 1500 to load in db")
-
-                viewModel.getContactListFromDB()
-                delay(200)
                 scope.launch {
-                    viewModel.contactsFromDB
-                        .collect {
-                            listOfPerson = it
-                            println("it=$it")
-                        }
+                    viewModel.loadContactsFromNetwork()
                 }
+                delay(500)
+                scope.launch {
+                    viewModel.contactsFromNetwork.collect {
+                        it.forEach { contact ->
+                            listOfContacts.add(contactMinimiser(contact))
+                        }
+                        println("list of person one way $it")
+                    }
+                }
+                delay(500)
+                contactAdapter.setData(listOfContacts, ::onItemClick)
             }
-
             viewModel.stateOfView.collect { state ->
                 when (state) {
                     State.Ready -> {
                         binding.progressBar.visibility = View.GONE
-                        println("Ready")
-                        // viewModel.getContactListFromDB()
-                        //  var listOfContact =listOf<Contact>()
-                        // val listOfPerson = mutableListOf<Person>()
-                        //   lifecycleScope.launch {
-                        //      viewModel.contactsFromNetwork.collect {
-                        // listOfContact = it
-                        //it.forEach {contact -> listOfPerson.add(contactToPerson(contact))}
-                        println("list of person ready $listOfPerson")
-                        contactAdapter.setData(listOfPerson, ::onItemClick)
-                        // }
-                        // }
-
+                        contactAdapter.setData(listOfContacts, ::onItemClick)
                     }
                     State.Error -> {
                         binding.progressBar.visibility = View.GONE
-                        println("Error")
                         findNavController().navigate(R.id.action_global_bottomFragmentMistake)
                     }
                     State.Loading -> {
                         binding.progressBar.visibility = View.VISIBLE
-                        println("Loading")
                     }
                     State.Done -> {
+                        viewModel.getContactListFromDB()
                         binding.progressBar.visibility = View.GONE
-                        println("Done")
-                        /*  var listOfPerson =listOf<Person>()
-                          lifecycleScope.launch {
-                              viewModel.contactsFromDB.collect {
-                                  listOfPerson = it
-                              }
-                          }
-                          // viewModel.getContactListFromDB()
-                          delay(200)
-                          // println("from done ${viewModel.contactsFromDB.value.first()}")
-
-                          contactAdapter.setData(listOfPerson, ::onItemClick)*/
-                        //   val listOfPerson = mutableListOf<Person>()
-                        // lifecycleScope.launch {
-                        //     viewModel.contactsFromNetwork.collect {
-                        // listOfContact = it
-                        //        it.forEach {contact -> listOfPerson.add(contactToPerson(contact))}
-                        println("list of person done  $listOfPerson")
-
-                        contactAdapter.setData(listOfPerson, ::onItemClick)
-
+                        contactAdapter.setData(listOfContacts, ::onItemClick)
                     }
-
                 }
-
             }
-
-            //}
-            // }
         }
         binding.buttonReload.setOnClickListener {
             lifecycleScope.launch {
@@ -168,38 +121,22 @@ class MainFragment : Fragment() {
         bundle = Bundle().apply {
             putString("name", name)
             putString("lastName", lastName)
-
         }
-        println("open fr2")
         findNavController().navigate(R.id.action_global_blankFragment, bundle)
     }
 
-}
-
-fun contactToPerson(contact: Contact): Person {
-    with(contact) {
-        return Person(
-            id = 10,
-            title = name.title,
-            first = name.first,
-            last = name.last,
-            gender = gender,
-            date = dob.date,
-            age = dob.age,
-            large = picture.large,
-            medium = picture.medium,
-            thumbnail = picture.thumbnail,
-            address = Address(
-                email = email,
-                phone = phone,
-                homeNumber = location.street.number,
-                street = location.street.name,
-                city = location.city,
-                state = location.state,
-                country = location.country,
-                latitude = location.coordinates.latitude,
-                longitude = location.coordinates.longitude
+    fun contactMinimiser(contact: Contact): ContactMinimal {
+        with(contact) {
+            return ContactMinimal(
+                name.title,
+                name.first,
+                name.last,
+                phone,
+                location.country,
+                location.city,
+                picture.thumbnail
             )
-        )
+        }
     }
 }
+

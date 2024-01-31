@@ -10,15 +10,20 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-class MainViewModel(private val contactDao: ContactDao) : ViewModel() {
+class MainViewModel(contactDao: ContactDao) : ViewModel() {
     val repository = Repository(contactDao)
     private var _state = MutableStateFlow<State>(State.Ready)
     val stateOfView = _state.asStateFlow()
-    private val _contactsFromDB = MutableStateFlow<List<Person>>(emptyList())
+    private val _contactsFromDB = MutableStateFlow<List<ContactMinimal>>(emptyList())
     val contactsFromDB = _contactsFromDB.asStateFlow()
     private val _contactsFromNetwork = MutableStateFlow<List<Contact>>(emptyList())
     val contactsFromNetwork = _contactsFromNetwork.asStateFlow()
 
+    init {
+        viewModelScope.launch {
+            getContactListFromDB()
+        }
+    }
     fun loadContactsFromNetwork() {
         _state.value = State.Loading
         viewModelScope.launch {
@@ -29,7 +34,7 @@ class MainViewModel(private val contactDao: ContactDao) : ViewModel() {
                     _contactsFromNetwork.value = it.results
                     _state.value = State.Done
                     println("contacts ${it.results}")
-                    // repository.addPersonInDB(it.results.first())
+                    loadContactsInDB()
                 },
                 onFailure = {
                     _state.value = State.Error
@@ -42,26 +47,25 @@ class MainViewModel(private val contactDao: ContactDao) : ViewModel() {
     fun loadContactsInDB() {
         viewModelScope.launch {
             contactsFromNetwork.value.forEach {
-                println("adding to db $it")
                 repository.addPersonInDB(it)
             }
         }
     }
 
     fun getContactListFromDB() {
-      //  _state.value = State.Loading
+        _state.value = State.Loading
         viewModelScope.launch {
             kotlin.runCatching {
-                repository.allContacts
+                repository.contactMinimal
             }.fold(
                 onSuccess = {
                     _contactsFromDB.value = it.value
-           //         _state.value = State.Done
+                    _state.value = State.Done
                     println("from db ${it.value}")
                 },
                 onFailure = {
                     Log.d("VM loadContactsFromDB", " ${it.message} ${it.cause}")
-             //       _state.value = State.Error
+                    _state.value = State.Error
                 }
             )
         }
@@ -78,9 +82,6 @@ class MainViewModel(private val contactDao: ContactDao) : ViewModel() {
         viewModelScope.launch {
             person = repository.getPersonByIName(name, lastName)
         }
-
-        println("from view model $person")
-
         delay(100)
         return person
     }

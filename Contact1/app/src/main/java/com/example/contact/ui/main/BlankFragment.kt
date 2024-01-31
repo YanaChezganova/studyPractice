@@ -19,9 +19,6 @@ import com.example.contact.databinding.FragmentBlankBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val NAME = "name"
 private const val LAST_NAME = "lastName"
 
@@ -30,18 +27,16 @@ class BlankFragment : Fragment() {
     private var personLastName: String? = null
     private var _binding: FragmentBlankBinding? = null
     private val binding get() = _binding!!
-    private var bundle = Bundle()
     private val viewModel by viewModels<MainViewModel>()
     {
         object : ViewModelProvider.Factory {
             override fun <T : ViewModel> create(modelClass: Class<T>): T {
                 val contactDao: ContactDao =
-                    (activity?.application as Application).contactsList.contactDao()
+                    (activity?.application as Application).contactList.contactDao()
                 return MainViewModel(contactDao) as T
             }
         }
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -49,7 +44,6 @@ class BlankFragment : Fragment() {
             personLastName = it.getString(LAST_NAME)
         }
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -70,16 +64,16 @@ class BlankFragment : Fragment() {
             binding.gender.text = person.gender
             binding.personAge.text = resources.getString(R.string.age, person.age)
             binding.personDayOfBirth.text = person.date.take(10)
-            with(person.address){
+            with(person.address) {
                 binding.buttonAddress.text = resources.getString(
-                R.string.full_address,
-                country,
-                state,
-                city,
-                street,
-                homeNumber
-            )
-            binding.buttonEmail.text = email
+                    R.string.full_address,
+                    country,
+                    state,
+                    city,
+                    street,
+                    homeNumber
+                )
+                binding.buttonEmail.text = email
             }
             Glide.with(binding.personImage.context)
                 .load(person.large)
@@ -101,11 +95,18 @@ class BlankFragment : Fragment() {
                 }
                 startActivity(sendIntent)
             }
-
-
+            binding.buttonAddress.setOnClickListener {
+                val geoLocation =
+                    Uri.parse("geo:${person.address.longitude},${person.address.latitude}")
+                showMap(geoLocation)
+            }
         }
         return binding.root
     }
-
-
+    private fun showMap(geoLocation: Uri) {
+        val intent = Intent(Intent.ACTION_VIEW).apply {
+            data = geoLocation
+        }
+        startActivity(intent)
+    }
 }

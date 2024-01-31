@@ -22,11 +22,11 @@ import androidx.room.PrimaryKey
     val date: String,
     @ColumnInfo(name = "age")
     val age: Int,
-    @ColumnInfo(name = "big picture url")
+    @ColumnInfo(name = "bigPictureUrl")
     val large: String,
-    @ColumnInfo(name = "medium picture url")
+    @ColumnInfo(name = "mediumPictureUrl")
     val medium: String,
-    @ColumnInfo(name = "thumbnail url")
+    @ColumnInfo(name = "thumbnailUrl")
     val thumbnail: String,
     @Embedded
     val address: Address

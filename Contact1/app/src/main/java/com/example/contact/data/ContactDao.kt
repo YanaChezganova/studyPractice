@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.StateFlow
 @Dao
 interface ContactDao {
 
-    @Insert(entity = Person::class, onConflict = OnConflictStrategy.REPLACE)
+    @Insert(entity = Person::class, onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertPersonInDB(person: Person)
 
     @Query("SELECT * FROM Person")
@@ -19,5 +19,6 @@ interface ContactDao {
     @Query("DELETE FROM Person")
     suspend fun deletePerson()
 
-
-}
+    @Query("SELECT title, firstName, lastName, phone, country, city, thumbnailUrl FROM Person")
+    fun getContactMinimal(): Flow<List<ContactMinimal>>
+    }
